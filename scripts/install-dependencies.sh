@@ -3,9 +3,9 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-# Display welcome message using figlet and lolcat
+# Display welcome message using figlet
 clear
-figlet -c "Setup Script" | lolcat
+figlet -c "Setup Script"
 
 echo "Starting setup script..."
 
@@ -54,5 +54,5 @@ initialize_astro_project() {
 install_dependencies
 initialize_astro_project
 
-figlet -c "Setup Complete" | lolcat
+figlet -c "Setup Complete"
 echo "Setup completed successfully."
