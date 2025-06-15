@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@import "./theme.css" layer(theme);
+
+@import "./base/reset.css" layer(base);
+@import "./base/fonts.css" layer(base);
+
+/* @import "./utilities.css"; */
+/* @import "./components.css" layer(components); */

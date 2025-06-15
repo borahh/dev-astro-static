@@ -1,0 +1,22 @@
+/* Define variables here that does not require any utility class generation from tailwind */
+:root {
+  --el-stack: great;
+}
+
+/*
+ * Variables defined here will benifit from tailwinds utiity class generation
+ *
+ * https://tailwindcss.com/docs/theme#why-theme-instead-of-root */
+@theme {
+  --*: initial;
+}
+
+/* Define theme variables here that reference other variables
+ * https://tailwindcss.com/docs/theme#referencing-other-variables 
+ *
+ * NOTE: These variables are always included in the output CSS.
+ * https://tailwindcss.com/docs/theme#generating-all-css-variables
+ */
+@theme static {
+  --default-x: 999;
+}

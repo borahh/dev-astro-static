@@ -1,0 +1,13 @@
+services:
+  astro-dev:
+    image: mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm
+    volumes:
+      - ../:/workspaces/dev-astro-static
+    ports:
+      - "4321:4321"
+    working_dir: /workspaces/dev-astro-static
+    command: sleep infinity
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+    tty: true
